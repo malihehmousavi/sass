@@ -1,0 +1,126 @@
+.logo-header {
+  height: 150px;
+  background-image: url(Images/LOGO.png);
+  background-position: center;
+  animation: moveAndRotate 20s infinite;
+}
+@keyframes moveAndRotate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.name {
+  text-align: center;
+  color: rgb(150, 131, 71);
+  background-color: rgb(231, 227, 217);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.logo {
+  width: 50px;
+  text-align: start;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 60%;
+}
+
+.img-head1 {
+  padding-top: 4px;
+  width: 90px;
+  height: 100px;
+}
+
+.img-head2 {
+  width: 80px;
+  height: 90px;
+}
+
+.img-head3 {
+  width: 70px;
+  height: 80px;
+}
+
+main {
+  width: 100%;
+  background-color: silver;
+}
+main .s1 {
+  text-align: center;
+}
+main .s1 .head-menu {
+  font-size: 30px;
+  padding-top: 20px;
+  text-shadow: 3px 3px rgb(187, 177, 177);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.CARDS {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.CARDS div:nth-child(1) {
+  border: 2px solid red;
+}
+.CARDS div:nth-child(2) {
+  border: 2px solid rgb(102, 255, 0);
+}
+.CARDS div:nth-child(3) {
+  border: 2px solid rgb(38, 0, 255);
+}
+.CARDS div:nth-child(4) {
+  border: 2px solid rgb(255, 0, 238);
+}
+.CARDS div:nth-child(5) {
+  border: 2px solid rgb(204, 255, 0);
+  align-items: center;
+}
+.CARDS div:nth-child(6) {
+  border: 2px solid rgb(246, 146, 146);
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  position: relative;
+  background-color: rgb(150, 131, 71);
+}
+footer .logo {
+  position: absolute;
+  top: 0;
+  left: 45%;
+}
+footer .text-end {
+  font-size: 25px;
+  font-style: italic;
+  padding-bottom: 15px;
+  padding-right: 10px;
+}
+footer .find {
+  padding-left: 10px;
+  display: flex;
+}
+footer .contact > i {
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .CARDS {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+  .text-end {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
